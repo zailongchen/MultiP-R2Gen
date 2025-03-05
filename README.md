@@ -1,7 +1,7 @@
 # R2GenGPT: Radiology Report Generation with Frozen LLMs
 
 ## Introduction
-![overview](https://github.com/wang-zhanyu/R2GenGPT/blob/main/images/align.png)
+![overview](https://github.com/zailongchen/MultiP-R2Gen/blob/main/images/frame.png?raw=true)
 
 ## Getting Started
 ### Installation
@@ -11,8 +11,8 @@
 Git clone our repository and install the requirements.
 
 ```bash
-https://github.com/wang-zhanyu/R2GenGPT.git
-cd R2GenGPT
+https://github.com/zailongchen/MultiP-R2Gen.git
+cd MultiP-R2Gen
 pip install -r requirements.txt
 ```
 
@@ -27,48 +27,63 @@ After downloading the data, place it in the ./data folder.
 
 ### Training
 
-For shallow alignment
+For IU-Xray
+
+Phase 1: Label Prediction
 
 ```bash
-bash scripts/4-1.shallow_run.sh
+bash scripts/iuxray/1-label_train.sh
 ```
 
-For delta alignment
+Phase 2: Triple Extraction
 
 ```bash
-bash scripts/5-1.delta_run.sh
+bash scripts/iuxray/2-triple_train.sh
 ```
 
-For deep alignment
+Phase 3: Report Generation
 
 ```bash
-bash scripts/6-1.deep_run.sh
+bash scripts/iuxray/3-report_train.sh
 ```
 
-### Testing (For MIMIC-CXR)
-You can download our pretrained Delta checkpoints for [Here](https://drive.google.com/drive/folders/1ywEITWfYIAAYy0VY1IZ24Ec_GoNmkqIY?usp=sharing)
+For MIMIC-CXR
 
-For shallow alignment
+Phase 1: Label Prediction
 
 ```bash
-bash scripts/4-2.shallow_test.sh
+bash scripts/mimic/1-label_train.sh
 ```
 
-For delta alignment
+Phase 2: Triple Extraction
 
 ```bash
-bash scripts/5-2.delta_test.sh
+bash scripts/mimic/2-triple_train.sh
 ```
 
-For deep alignment
+Phase 3: Report Generation
 
 ```bash
-bash scripts/6-2.shallow_test.sh
+bash scripts/mimic/3-report_train.sh
 ```
 
+### Testing
+
+For IU-Xray
+
+```bash
+bash scripts/iuxray/3-report_test.sh
+```
+
+For MIMIC-CXR
+
+```bash
+bash scripts/mimic/3-report_test.sh
+```
 
 ## Acknowledgement
 
++ [R2GenGPT](https://github.com/wang-zhanyu/R2GenGPT) This repo is mainly built upon R2GenGPT. We sincerely appreciate the authors' contributions to the original implementation.
 + [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4) Some codes of this repo are based on MiniGPT-4.
 + [Llama2](https://github.com/facebookresearch/llama) The fantastic language ability of Llama-2 with only 7B parameters is just amazing.
 
