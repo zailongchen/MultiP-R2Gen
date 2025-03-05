@@ -1,4 +1,4 @@
-# R2GenGPT: Radiology Report Generation with Frozen LLMs
+# Enhancing Radiology Report Generation via Multi-Phased Supervision
 
 ## Introduction
 ![overview](https://github.com/zailongchen/MultiP-R2Gen/blob/main/images/frame.png?raw=true)
