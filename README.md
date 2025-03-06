@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 **2. Prepare the training dataset**
 
-IU-xray: you can download our preprocess annotation files from [label](https://drive.google.com/file/d/1xVGXTeRw9WedqNbKOBPJwN4EgsQXbkP6/view?usp=sharing), [triple](https://drive.google.com/file/d/1BZyPmoiretALyvzevdRMOD6nTXKD3o0r/view?usp=sharing), and [report](https://drive.google.com/file/d/1G7l3J769SvYDCzKemHUDi5ta4Lq7Vvra/view?usp=sharing). And download the dataset from [here](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view)
+IU-xray: you can download our preprocess annotation files from [label](https://drive.google.com/file/d/1xVGXTeRw9WedqNbKOBPJwN4EgsQXbkP6/view?usp=sharing), [triple](https://drive.google.com/file/d/1BZyPmoiretALyvzevdRMOD6nTXKD3o0r/view?usp=sharing), and [report](https://drive.google.com/file/d/1G7l3J769SvYDCzKemHUDi5ta4Lq7Vvra/view?usp=sharing). And download the dataset from [here](https://drive.google.com/file/d/1RBD2nZemEt6lYdSHBL5Uzq4t0Gz79oDq/view?usp=sharing)
 
 Mimic-cxr: you can download our preprocess annotation files from [label](https://drive.google.com/file/d/15-e0RZ_Rn4PiNI0WaYIlvTbVOF_IbdBs/view?usp=sharing), [triple](https://drive.google.com/file/d/1etucWFKKHIX6RIt6T3hvIrXl8CBCMPsN/view?usp=sharing), and [report](https://drive.google.com/file/d/1qVozZw_isNLDIXTp1Uaz32J21b1lQxjD/view?usp=sharing). And download the images from [official website](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
 
